@@ -93,6 +93,28 @@
 						}
 					]
 				}
+			],
+			"fontSizes": [
+				{
+					"slug": "small",
+					"size": "1rem",
+					"name": "Small"
+				},
+				{
+					"slug": "medium",
+					"size": "1.5rem",
+					"name": "Medium"
+				},
+				{
+					"slug": "large",
+					"size": "1.75rem",
+					"name": "Large"
+				},
+				{
+					"slug": "x-large",
+					"size": "2rem",
+					"name": "Extra Large"
+				}
 			]
 		}
 	},
@@ -100,7 +122,19 @@
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--montserrat)",
 			"lineHeight": "1.6",
-			"fontSize": "1rem"
+			"fontSize": "var(--wp--preset--font-size--small)"
+		},
+		"elements": {
+			"h1": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--montserrat)",
+					"fontWeight": "black",
+					"fontSize": "clamp(1rem, -1.8125rem + 9vw, 3.25rem)"
+				},
+				"color": {
+					"text": "var(--wp--preset--color--complementary)"
+				}
+			}
 		}
 	}
 }
