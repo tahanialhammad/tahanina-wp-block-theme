@@ -131,6 +131,16 @@
 		}
 	},
 	"styles": {
+		"blocks": {
+			"core/button": {
+				"border": {
+					"radius": "5px"
+				},
+				"color": {
+					"background": "var(--wp--preset--color--complementary)"
+				}
+			}
+		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--montserrat)",
 			"lineHeight": "1.6",
