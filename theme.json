@@ -19,6 +19,16 @@
 			"area": "footer"
 		}
 	],
+	"customTemplates": [
+		{
+			"name": "ar-page",
+			"title": "Arbic template",
+			"postTypes": [
+				"page",
+				"post"
+			]
+		}
+	],
 	"settings": {
 		"layout": {
 			"contentSize": "1000px",
