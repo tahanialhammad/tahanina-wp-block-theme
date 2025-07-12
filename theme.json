@@ -11,6 +11,10 @@
 			"area": "header"
 		},
 		{
+			"name": "sidebar",
+			"area": "uncategorized"
+		},
+		{
 			"name": "footer",
 			"area": "footer"
 		}
