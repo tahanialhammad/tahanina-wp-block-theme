@@ -35,6 +35,7 @@
 			"wideSize": "1200px"
 		},
 		"color": {
+			"defaultPalette": false,
 			"palette": [
 				{
 					"name": "Primary",
@@ -146,6 +147,12 @@
 				"vh",
 				"vw"
 			]
+		},
+		"border": {
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true
 		}
 	},
 	"styles": {
