@@ -182,6 +182,14 @@
 					"text": "var(--wp--preset--color--complementary)"
 				}
 			},
+			"h2":{
+				"typography": {
+					"fontSize" :"clamp(0.8rem, -0.7rem + 4.8vw, 2rem)"
+				},
+				"color": {
+					"text": "var(--wp--preset--color--primary)"
+				}
+			},
 			"button": {
 				"color": {
 					"text": "var(--wp--preset--color--primary)",
@@ -200,6 +208,11 @@
 						"left": "1.5rem",
 						"right": "1.5rem"
 					}
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--primary)"
 				}
 			}
 		}
