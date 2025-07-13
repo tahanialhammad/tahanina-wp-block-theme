@@ -40,12 +40,12 @@
 				{
 					"name": "Primary",
 					"slug": "primary",
-					"color": "#007cba"
+					"color": "#292323"
 				},
 				{
 					"name": "Secondary",
 					"slug": "secondary",
-					"color": "#006ba1"
+					"color": "#f3f3f3"
 				},
 				{
 					"name": "Foreground",
@@ -162,7 +162,10 @@
 		"blocks": {
 			"core/button": {
 				"border": {
-					"radius": "25px"
+					"radius": "5px"
+				},
+				"color": {
+					"background": "var(--wp--preset--color--complementary)"
 				}
 			}
 		},
@@ -180,26 +183,6 @@
 				},
 				"color": {
 					"text": "var(--wp--preset--color--complementary)"
-				}
-			},
-			"button": {
-				"color": {
-					"text": "var(--wp--preset--color--primary)",
-					"background": "var(--wp--preset--color--background)"
-				},
-				"border": {
-					"radius": "25px",
-					"width": "2px",
-					"style": "solid",
-					"color": "var(--wp--preset--color--primary)"
-				},
-				"spacing": {
-					"padding": {
-						"top": "0.5rem",
-						"bottom": "0.5rem",
-						"left": "1.5rem",
-						"right": "1.5rem"
-					}
 				}
 			}
 		}
