@@ -179,7 +179,8 @@
 				"color": {
 					"background": "var(--wp--preset--color--complementary)"
 				}
-			}
+			},
+			"core/site-title":{}
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--montserrat)",
