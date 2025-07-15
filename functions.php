@@ -27,6 +27,41 @@ endif;
 add_action('wp_enqueue_scripts', 'tahanina_enqueue_styles');
 
 
+// Register custom block styles.
+if (! function_exists('tahanina_block_styles')) :
+    /**
+     * Registers custom block styles.
+     *
+     * @since Tahanina 1.0
+     *
+     * @return void
+     */
+    function tahanina_block_styles()
+    {
+        register_block_style(
+            'core/button',
+            [
+                'name'  => 'primary-button',
+                'label' => __('Primary Button', 'tahanina'),
+                'inline_style' => '
+                    .wp-block-button.is-style-primary-button > .wp-block-button__link {
+                        background-color: var(--wp--preset--color--primary) !important;
+                        color: var(--wp--preset--color--background) !important;
+                        transition: all 0.2s !important;
+                    }
+                    .wp-block-button.is-style-primary-button > .wp-block-button__link:hover {
+                        background-color: transparent !important;
+                        color: var(--wp--preset--color--primary) !important;
+                    }
+                ',
+            ]
+        );
+    }
+endif;
+
+add_action('init', 'tahanina_block_styles');
+
+
 
 
 /* Add polylang swicher shortcode */
