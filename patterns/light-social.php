@@ -1,10 +1,9 @@
 <?php
 /**
- * Title: Header Social links
+ * Title: Light Social links
  * Slug: tahaninablocktheme/header-social
  * Categories: header
- * Block Types: core/template-part/header
- * Description: header with centered site title and social links.
+ * Description:  Light social links.
  */
 
 ?>
