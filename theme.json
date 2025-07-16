@@ -30,6 +30,7 @@
 		}
 	],
 	"settings": {
+		"appearanceTools": true,
 		"layout": {
 			"contentSize": "1000px",
 			"wideSize": "1200px"
@@ -163,6 +164,14 @@
 		}
 	},
 	"styles": {
+		"spacing": {
+			"padding": {
+				"top" : "0",
+				"bottom" : "0",
+				"left" : "10px",
+				"right": "10"
+			}
+		},
 		"blocks": {
 			"core/button": {
 				"border": {
