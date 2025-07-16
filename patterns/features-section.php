@@ -16,7 +16,7 @@
 
 <!-- wp:columns {"verticalAlignment":null,"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"top","style":{"border":{"radius":"15px"},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"backgroundColor":"primary"} -->
-<div class="wp-block-column is-vertically-aligned-top has-primary-background-color has-background" style="border-radius:15px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"id":320,"width":"59px","height":"auto","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<div class="wp-block-column is-vertically-aligned-top has-primary-background-color has-background" style="border-radius:15px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"width":"59px","height":"auto","sizeSlug":"full","linkDestination":"none","align":"center"} -->
 <figure class="wp-block-image aligncenter size-full is-resized"><img src="http://wordpress.test/wp-content/uploads/2025/07/Client-Focus.png" alt="" class="wp-image-320" style="width:59px;height:auto"/></figure>
 <!-- /wp:image -->
 
@@ -30,7 +30,7 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"top","style":{"border":{"radius":"15px"},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"backgroundColor":"primary"} -->
-<div class="wp-block-column is-vertically-aligned-top has-primary-background-color has-background" style="border-radius:15px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"id":320,"width":"59px","height":"auto","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<div class="wp-block-column is-vertically-aligned-top has-primary-background-color has-background" style="border-radius:15px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"width":"59px","height":"auto","sizeSlug":"full","linkDestination":"none","align":"center"} -->
 <figure class="wp-block-image aligncenter size-full is-resized"><img src="http://wordpress.test/wp-content/uploads/2025/07/Client-Focus.png" alt="" class="wp-image-320" style="width:59px;height:auto"/></figure>
 <!-- /wp:image -->
 
@@ -44,7 +44,7 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"top","style":{"border":{"radius":"15px"},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"backgroundColor":"primary"} -->
-<div class="wp-block-column is-vertically-aligned-top has-primary-background-color has-background" style="border-radius:15px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"id":320,"width":"59px","height":"auto","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<div class="wp-block-column is-vertically-aligned-top has-primary-background-color has-background" style="border-radius:15px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"width":"59px","height":"auto","sizeSlug":"full","linkDestination":"none","align":"center"} -->
 <figure class="wp-block-image aligncenter size-full is-resized"><img src="http://wordpress.test/wp-content/uploads/2025/07/Client-Focus.png" alt="" class="wp-image-320" style="width:59px;height:auto"/></figure>
 <!-- /wp:image -->
 
