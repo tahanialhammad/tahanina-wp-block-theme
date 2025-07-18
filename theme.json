@@ -219,7 +219,7 @@
 					"fontSize": "clamp(1rem, -1.8125rem + 9vw, 3.25rem)"
 				},
 				"color": {
-					"text": "var(--wp--preset--color--complementary)"
+					"text": "var(--wp--preset--color--primary)"
 				}
 			},
 			"h2": {

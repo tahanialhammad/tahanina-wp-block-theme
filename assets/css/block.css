@@ -8,6 +8,43 @@
   font-weight: bold !important;
 }
 
+/* === Z-Index Utilities === */
+.z-0 {
+  z-index: 0 !important;
+  position: relative !important;
+}
+
+.z-10 {
+  z-index: 100 !important;
+  position: relative !important;
+}
+.z-front {
+  z-index: 9999 !important;
+  position: relative !important;
+}
+
+.z-behind {
+  z-index: -1 !important;
+  position: relative !important;
+}
+
+
+
+.wp-block-button__link {
+  min-width: 200px;
+  display: inline-block;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
 .nav-mobile {
   display: none;
 }
