@@ -38,6 +38,7 @@ if (! function_exists('tahanina_block_styles')) :
      */
     function tahanina_block_styles()
     {
+        // Primary Button style
         register_block_style(
             'core/button',
             [
@@ -54,8 +55,45 @@ if (! function_exists('tahanina_block_styles')) :
                         color: var(--wp--preset--color--primary) !important;
                     }
                 ',
+            ],
+        );
+
+        // Checkmark list style
+        register_block_style(
+            'core/list',
+            [
+                'name'  => 'checkmark-list',
+                'label' => __('Checkmark', 'tahanina'),
+                'inline_style' => '
+                    ul.is-style-checkmark-list {
+                        list-style-type: "✓";
+                        padding-left: 1em;
+                    }
+                    ul.is-style-checkmark-list li {
+                        padding-inline-start: 0.5ch;
+                    }
+                ',
             ]
         );
+
+        // Category list style
+        register_block_style(
+            'core/categories',
+            [
+                'name'  => 'no-bullets',
+                'label' => __('No Bullets', 'tahanina'),
+                'inline_style' => '
+                    ul.is-style-no-bullets {
+                        list-style: none;
+                    }
+
+                    ul.is-style-no-bullets li a{
+                       text-decoration: none;
+                    }
+                ',
+            ]
+        );
+
     }
 endif;
 
