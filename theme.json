@@ -204,6 +204,9 @@
 				"color": {
 					"background": "var(--wp--preset--color--complementary)"
 				}
+			},
+			"core/navigation":{
+				  "css": "& a:hover span { color: var(--wp--preset--color--complementary); }"
 			}
 		},
 		"typography": {
