@@ -90,6 +90,34 @@ if (! function_exists('tahanina_block_styles')) :
                     ul.is-style-no-bullets li a{
                        text-decoration: none;
                     }
+
+                      ul.is-style-no-bullets li a:hover{
+                      opacity: 0.8;
+                    }
+                ',
+            ]
+        );
+
+        register_block_style(
+            'core/categories',
+            [
+                'name'  => 'flex-categories',
+                'label' => __('Flex Layout', 'tahanina'),
+                'inline_style' => '
+                ul.is-style-flex-categories {
+                        display: flex;
+                        gap: 1em;
+                        flex-wrap: wrap;
+                        list-style: none;
+                    }
+
+                   ul.is-style-flex-categories li a{
+                       text-decoration: none;
+                    }
+
+                     ul.is-style-flex-categories li a:hover{
+                      opacity: 0.8;
+                    }
                 ',
             ]
         );
