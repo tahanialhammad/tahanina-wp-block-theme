@@ -1,0 +1,23 @@
+.wp-block-navigation a:hover span {
+  color: var(--wp--preset--color--complementary);
+}
+
+
+.wp-block-navigation-item.current-menu-item > a {
+  color: var(--wp--preset--color--complementary) !important;
+  font-weight: bold !important;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-left,
+  .nav-right {
+    display: none;
+  }
+   .nav-mobile {
+    display: block;
+  }
+}
