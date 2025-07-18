@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: CTA with image
- * Slug: tahaninablocktheme/cta-with-image
+ * Slug: tahanina/cta-with-image
  * Categories: banner
  * Description: A CTA with two columns, including a heading, short paragraph, button, and image.
  */

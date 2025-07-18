@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Light Social links
- * Slug: tahaninablocktheme/Light-social
+ * Slug: tahanina/Light-social
  * Categories: header
  * Description:  Light social links.
  */

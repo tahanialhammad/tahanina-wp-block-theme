@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Features section
- * Slug: tahaninablocktheme/features-section
+ * Slug: tahanina/features-section
  * Categories: banner
  * Description: A features section with three columns, including a icon, heading, short paragraph.
  */

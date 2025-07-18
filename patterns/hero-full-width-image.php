@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Hero, full width image
- * Slug: tahaninablocktheme/hero-full-width-image
+ * Slug: tahanina/hero-full-width-image
  * Categories: banner
  * Description: A hero with a full width image, heading, short paragraph and button.
  */

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Grid query posts
- * Slug: tahaninablocktheme/grid-query-loop-posts
+ * Slug: tahanina/grid-query-loop-posts
  * Categories: query
  * Block Types: core/query
  * Viewport width: 1400

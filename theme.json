@@ -196,7 +196,6 @@
 			},
 			"core/cover": {
 				"color": {
-					"background": "red",
 					"text": "var(--wp--preset--color--background)"
 				}
 			},
