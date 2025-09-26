@@ -10,10 +10,6 @@
 			"name": "header-centered",
 			"area": "header"
 		},
-			{
-			"name": "header-two-menu-centered",
-			"area": "header"
-		},
 		{
 			"name": "sidebar",
 			"area": "uncategorized"
@@ -36,8 +32,8 @@
 	"settings": {
 		"appearanceTools": true,
 		"layout": {
-			"contentSize": "1000px",
-			"wideSize": "1200px"
+			"contentSize": "1200px",
+			"wideSize": "1400px"
 		},
 		"color": {
 			"link": true,
@@ -46,12 +42,12 @@
 				{
 					"name": "Primary",
 					"slug": "primary",
-					"color": "#007cba"
+					"color": "#ffc900"
 				},
 				{
 					"name": "Secondary",
 					"slug": "secondary",
-					"color": "#006ba1"
+					"color": "#473232"
 				},
 				{
 					"name": "Foreground",
@@ -61,12 +57,17 @@
 				{
 					"name": "Background",
 					"slug": "background",
-					"color": "#ffffff"
+					"color": "#edeff2"
+				},
+				{
+					"name": "Background2",
+					"slug": "background2",
+					"color": "#fff"
 				},
 				{
 					"name": "Tertiary",
 					"slug": "tertiary",
-					"color": "#F0F0F0"
+					"color": "#ffd800"
 				},
 				{
 					"name": "Complementary",
@@ -180,6 +181,9 @@
 		}
 	},
 	"styles": {
+				"color": {
+			"background": "var(--wp--preset--color--background)"
+		},
 		"spacing": {
 			"padding": {
 				"top": "0",

@@ -1,12 +1,49 @@
-.wp-block-navigation a:hover span {
-  color: var(--wp--preset--color--complementary);
+.wp-block-navigation a:hover {
+  /* color: var(--wp--preset--color--complementary) !important; */
+  border-bottom: 2px solid var(--wp--preset--color--complementary);
 }
 
 
 .wp-block-navigation-item.current-menu-item > a {
-  color: var(--wp--preset--color--complementary) !important;
+  /* color: var(--wp--preset--color--complementary) !important; */
   font-weight: bold !important;
+  border-bottom: 2px solid var(--wp--preset--color--complementary);
 }
+
+
+
+/* Outline button default */
+.wp-block-button.is-style-outline .wp-block-button__link {
+  border: 2px solid var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--primary);
+  background-color: transparent;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+/* Outline button hover */
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--secondary) !important;
+  /* transform: translateY(-2px); */
+}
+
+/* Fill button default */
+.wp-block-button .wp-block-button__link {
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--background);
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;  
+  border: 2px solid var(--wp--preset--color--primary);
+}
+
+/* Hover effect for fill button */
+.wp-block-button .wp-block-button__link:hover {
+  background-color: var(--wp--preset--color--secondary);
+  /* transform: translateY(-2px); */
+  color: var(--wp--preset--color--background) !important;
+}
+
+
+
+
 
 /* === Z-Index Utilities === */
 .z-0 {

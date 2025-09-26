@@ -38,25 +38,25 @@ if (! function_exists('tahanina_block_styles')) :
      */
     function tahanina_block_styles()
     {
-        // Primary Button style
-        register_block_style(
-            'core/button',
-            [
-                'name'  => 'primary-button',
-                'label' => __('Primary Button', 'tahanina'),
-                'inline_style' => '
-                    .wp-block-button.is-style-primary-button > .wp-block-button__link {
-                        background-color: var(--wp--preset--color--primary) !important;
-                        color: var(--wp--preset--color--background) !important;
-                        transition: all 0.2s !important;
-                    }
-                    .wp-block-button.is-style-primary-button > .wp-block-button__link:hover {
-                        background-color: transparent !important;
-                        color: var(--wp--preset--color--primary) !important;
-                    }
-                ',
-            ],
-        );
+        // // Primary Button style
+        // register_block_style(
+        //     'core/button',
+        //     [
+        //         'name'  => 'primary-button',
+        //         'label' => __('Primary Button', 'tahanina'),
+        //         'inline_style' => '
+        //             .wp-block-button.is-style-primary-button > .wp-block-button__link {
+        //                 background-color: var(--wp--preset--color--primary) !important;
+        //                 color: var(--wp--preset--color--background) !important;
+        //                 transition: all 0.2s !important;
+        //             }
+        //             .wp-block-button.is-style-primary-button > .wp-block-button__link:hover {
+        //                 background-color: transparent !important;
+        //                 color: var(--wp--preset--color--primary) !important;
+        //             }
+        //         ',
+        //     ],
+        // );
 
         // Checkmark list style
         register_block_style(
@@ -157,3 +157,11 @@ function polylang_langswitch_dropdown()
     return $output;
 }
 add_shortcode('polylang', 'polylang_langswitch_dropdown');
+
+//allow svg image
+function theme_allow_svg_uploads($mimes)
+{
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter('upload_mimes', 'theme_allow_svg_uploads');
