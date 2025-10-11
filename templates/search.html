@@ -1,12 +1,16 @@
-<!-- wp:template-part {"slug":"header","theme":"tahaninablocktheme"} /-->
+<!-- wp:template-part {"slug":"header-two-menu-centered","theme":"iips-edu-theme"} /-->
 
-<h1>search page </h1>
+<!-- wp:group {"metadata":{"categories":["IIPS-EDU"],"patternName":"iips/page-title-and-search","name":"Page title and search"},"layout":{"type":"constrained","justifyContent":"center"}} -->
+<div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group"><!-- wp:query-title {"type":"search","style":{"border":{"bottom":{"color":"var:preset|color|primary","width":"1px"}},"layout":{"selfStretch":"fixed","flexSize":"50vw"}}} /-->
+
+<!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search ...","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true,"align":"right","style":{"border":{"radius":"20px"},"spacing":{"margin":{"right":"0","left":"0"}}},"borderColor":"primary"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 
 <!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
-<main class="wp-block-group"><!-- wp:query-title {"type":"search"} /-->
-
-<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:query {"queryId":67,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"metadata":{"categories":["posts"],"patternName":"core/query-standard-posts","name":"Standard"}} -->
+<main class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:query {"queryId":67,"query":{"perPage":12,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"metadata":{"categories":["posts"],"patternName":"core/query-standard-posts","name":"Standard"}} -->
 <div class="wp-block-query"><!-- wp:post-template -->
 <!-- wp:post-title {"isLink":true} /-->
 
@@ -17,9 +21,17 @@
 <!-- wp:separator {"backgroundColor":"tertiary"} -->
 <hr class="wp-block-separator has-text-color has-tertiary-color has-alpha-channel-opacity has-tertiary-background-color has-background"/>
 <!-- /wp:separator -->
-<!-- /wp:post-template --></div>
+<!-- /wp:post-template -->
+
+<!-- wp:query-pagination {"style":{"typography":{"letterSpacing":"10px"}},"fontSize":"medium","layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:query-pagination-previous /-->
+
+<!-- wp:query-pagination-numbers /-->
+
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination --></div>
 <!-- /wp:query --></div>
 <!-- /wp:group --></main>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"footer","theme":"tahaninablocktheme"} /-->
+<!-- wp:template-part {"slug":"footer","theme":"iips-edu-theme"} /-->

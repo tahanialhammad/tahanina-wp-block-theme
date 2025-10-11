@@ -21,8 +21,8 @@
 	],
 	"customTemplates": [
 		{
-			"name": "ar-page",
-			"title": "Arbic template",
+			"name": "custom page",
+			"title": "custom page template",
 			"postTypes": [
 				"page",
 				"post"
@@ -178,10 +178,24 @@
 		},
 		"position": {
 			"sticky": true
+		},
+		"shadow": {
+			"presets": [
+				{
+					"name": "Soft Shadow",
+					"slug": "soft-shadow",
+					"shadow": "0 4px 12px rgba(0, 0, 0, 0.1)"
+				},
+				{
+					"name": "Strong Shadow",
+					"slug": "strong-shadow",
+					"shadow": "0 6px 24px rgba(0, 0, 0, 0.2)"
+				}
+			]
 		}
 	},
 	"styles": {
-				"color": {
+		"color": {
 			"background": "var(--wp--preset--color--background)"
 		},
 		"spacing": {
@@ -206,6 +220,11 @@
 			"core/pullquote": {
 				"color": {
 					"background": "var(--wp--preset--color--complementary)"
+				}
+			},
+			"core/video": {
+				"border": {
+					"radius": "20px"
 				}
 			}
 		},
