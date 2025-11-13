@@ -1,27 +1,33 @@
-<!-- wp:template-part {"slug":"header-two-menu-centered","theme":"iips-edu-theme"} /-->
+<!-- wp:template-part {"slug":"header","theme":"tahaninablocktheme"} /-->
 
-<!-- wp:group {"metadata":{"categories":["IIPS-EDU"],"patternName":"iips/page-title-and-search","name":"Page title and search"},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group"><!-- wp:post-terms {"term":"category","style":{"border":{"bottom":{"color":"var:preset|color|primary","width":"1px"}},"typography":{"fontStyle":"bold","fontWeight":"700"}},"fontSize":"large","fontFamily":"poppins"} /-->
+<!-- wp:cover {"url":"http://wordpress-2.test/wp-content/uploads/2025/11/wordpress-website.webp","id":133,"dimRatio":50,"customOverlayColor":"#bba395","isUserOverlayColor":false,"minHeight":304,"minHeightUnit":"px","isDark":false,"sizeSlug":"full","style":{"border":{"radius":"20px"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover is-light" style="border-radius:20px;min-height:304px"><img class="wp-block-cover__image-background wp-image-133 size-full" alt="" src="http://wordpress-2.test/wp-content/uploads/2025/11/wordpress-website.webp" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#bba395"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Blog</h1>
+<!-- /wp:heading -->
 
-<!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search ...","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true,"align":"right","style":{"border":{"radius":"20px"},"spacing":{"margin":{"right":"0","left":"0"}}},"borderColor":"primary"} /--></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
+<!-- wp:paragraph -->
+<p>Blijf op de hoogte van trends in webontwikkeling, tips over WordPress en Laravel, en praktische adviezen voor ondernemers. Ontdek mijn nieuwste blogs en laat je inspireren!</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search ...","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true,"align":"center","style":{"border":{"radius":"20px"},"spacing":{"margin":{"right":"0","left":"0"}}},"borderColor":"primary"} /--></div></div>
+<!-- /wp:cover -->
 
 <!-- wp:group {"tagName":"main","metadata":{"categories":["IIPS-EDU"],"patternName":"iips/news-block2","name":"News page block 2"},"layout":{"type":"constrained"}} -->
 <main class="wp-block-group"><!-- wp:query {"queryId":24,"query":{"perPage":12,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":false,"taxQuery":{"category":[]}},"metadata":{"categories":["posts"],"patternName":"core/query-grid-posts","name":"Grid"}} -->
 <div class="wp-block-query"><!-- wp:post-template {"style":{"elements":{"link":{"color":{"text":"var:preset|color|tertiary"}}}},"textColor":"tertiary","layout":{"type":"grid","columnCount":4}} -->
-<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"1","width":"","height":"","sizeSlug":"medium","style":{"border":{"radius":{"topLeft":"20px","topRight":"20px"}},"spacing":{"margin":{"top":"0px","bottom":"0px"}}}} /-->
+<!-- wp:group {"style":{"border":{"radius":"20px"}},"backgroundColor":"background2","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-background-2-background-color has-background" style="border-radius:20px"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"1","width":"","height":"","sizeSlug":"medium","style":{"border":{"radius":{"topLeft":"20px","topRight":"20px","bottomLeft":"20px","bottomRight":"20px"}},"spacing":{"margin":{"top":"0px","bottom":"0px"}}}} /-->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","right":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40"},"margin":{"top":"0px","bottom":"0px"}},"border":{"radius":{"bottomLeft":"20px","bottomRight":"20px"}},"dimensions":{"minHeight":"150px"}},"gradient":"ocean-blue","layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","verticalAlignment":"space-between"}} -->
-<div class="wp-block-group has-ocean-blue-gradient-background has-background" style="border-bottom-left-radius:20px;border-bottom-right-radius:20px;min-height:150px;margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:post-title {"level":3,"isLink":true,"className":"is-style-truncated","style":{"elements":{"link":{"color":{"text":"var:preset|color|background"}}}},"textColor":"background"} /-->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","right":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40"},"margin":{"top":"0px","bottom":"0px"}},"border":{"radius":{"bottomLeft":"20px","bottomRight":"20px"}},"dimensions":{"minHeight":"150px"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","verticalAlignment":"space-between"}} -->
+<div class="wp-block-group" style="border-bottom-left-radius:20px;border-bottom-right-radius:20px;min-height:150px;margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:post-title {"level":3,"isLink":true,"className":"is-style-truncated","style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground"} /-->
 
-<!-- wp:post-date {"textAlign":"right"} /--></div>
+<!-- wp:post-excerpt {"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground"} /--></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
 <!-- /wp:post-template -->
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"#04A0D9","radius":"60px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-border-color" style="border-color:#04A0D9;border-width:1px;border-radius:60px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:query-pagination {"style":{"typography":{"letterSpacing":"10px"}},"fontSize":"medium","layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-group has-border-color" style="border-color:#04A0D9;border-width:1px;border-radius:60px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:query-pagination {"style":{"typography":{"letterSpacing":"10px"},"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","fontSize":"medium","layout":{"type":"flex","justifyContent":"center"}} -->
 <!-- wp:query-pagination-previous /-->
 
 <!-- wp:query-pagination-numbers /-->
@@ -32,4 +38,4 @@
 <!-- /wp:query --></main>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"footer","theme":"iips-edu-theme"} /-->
+<!-- wp:template-part {"slug":"footer","theme":"tahaninablocktheme"} /-->
