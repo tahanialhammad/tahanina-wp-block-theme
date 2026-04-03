@@ -7,6 +7,10 @@
 			"area": "header"
 		},
 		{
+			"name": "header-ar",
+			"area": "header"
+		},
+		{
 			"name": "header-centered",
 			"area": "header"
 		},
@@ -16,6 +20,10 @@
 		},
 		{
 			"name": "footer",
+			"area": "footer"
+		},
+			{
+			"name": "footer-ar",
 			"area": "footer"
 		}
 	],

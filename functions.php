@@ -158,6 +158,29 @@ function polylang_langswitch_dropdown()
 }
 add_shortcode('polylang', 'polylang_langswitch_dropdown');
 
+add_filter('render_block', function ($block_content, $block) {
+    // هل الكتلة عبارة عن رأس القالب؟
+    if (isset($block['blockName']) && $block['blockName'] === 'core/template-part') {
+
+        //  is current lang is Ar
+        if (function_exists('pll_current_language') && pll_current_language() === 'ar') {
+
+            // swtch header & footer
+            if (isset($block['attrs']['slug']) && $block['attrs']['slug'] === 'header') {
+                return do_blocks('<!-- wp:template-part {"slug":"header-ar"} /-->');
+            }
+            if (isset($block['attrs']['slug']) && $block['attrs']['slug'] === 'footer') {
+                return do_blocks('<!-- wp:template-part {"slug":"footer-ar"} /-->');
+            }
+        }
+    }
+
+    return $block_content;
+}, 10, 2);
+
+
+
+
 //allow svg image
 function theme_allow_svg_uploads($mimes)
 {
