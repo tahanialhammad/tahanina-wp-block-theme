@@ -3,7 +3,7 @@
   border-bottom: 2px solid var(--wp--preset--color--complementary);
 }
 
-.wp-block-navigation-item.current-menu-item > a {
+.wp-block-navigation-item.current-menu-item>a {
   /* color: var(--wp--preset--color--complementary) !important; */
   font-weight: bold !important;
   border-bottom: 2px solid var(--wp--preset--color--complementary);
@@ -16,26 +16,77 @@
   background-color: transparent;
   transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
 }
+
 /* Outline button hover */
 .wp-block-button.is-style-outline .wp-block-button__link:hover {
-  background-color: var(--wp--preset--color--primary);
-  color: var(--wp--preset--color--secondary) !important;
-  /* transform: translateY(-2px); */
+  /* background-color: var(--wp--preset--color--primary); */
+  color: var(--wp--preset--color--background) !important; 
+ /* transform: translateY(-2px); */
+  background-color: transparent;
 }
 
 /* Fill button default */
-.wp-block-button .wp-block-button__link {
+/* purpale */
+/* .wp-block-button .wp-block-button__link {
   background-color: var(--wp--preset--color--primary);
   color: var(--wp--preset--color--background);
   transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
   border: 2px solid var(--wp--preset--color--primary);
+
+
+  --active: 0;
+  --bg: radial-gradient(40% 50% at center 100%,
+      hsl(270 calc(var(--active) * 97%) 72% / var(--active)),
+      transparent),
+    radial-gradient(80% 100% at center 120%,
+      hsl(260 calc(var(--active) * 97%) 70% / var(--active)),
+      transparent),
+    hsl(260 calc(var(--active) * 97%) calc((var(--active) * 44%) + 12%)) !important;
+  background: var(--bg);
+
+  box-shadow: 0 0 calc(var(--active) * 3em) calc(var(--active) * 1em) hsl(260 97% 61% / 0.75),
+    0 0em 0 0 hsl(260 calc(var(--active) * 97%) calc((var(--active) * 50%) + 30%)) inset,
+    0 -0.05em 0 0 hsl(260 calc(var(--active) * 97%) calc(var(--active) * 60%)) inset;
+  transition: box-shadow var(--transition), scale var(--transition), background var(--transition);
+  scale: calc(1 + (var(--active) * 0.1));
+  transition: .3s;
+
+
 }
+ */
+
+
+/* Fill button default */
+/* chang it to my Primary color */
+.wp-block-button .wp-block-button__link {
+  --active: 0;
+  /* HSL for #ffc900 is 47, 100%, 50% */
+  --bg: radial-gradient(40% 50% at center 100%,
+      hsl(50 calc(var(--active) * 100%) 85% / var(--active)),
+      transparent),
+    radial-gradient(80% 100% at center 120%,
+      hsl(47 calc(var(--active) * 100%) 70% / var(--active)),
+      transparent),
+    hsl(47 calc(var(--active) * 100%) calc((var(--active) * 40%) + 10%)) !important;
+  
+  background: var(--bg);
+
+  /* The outer glow is now a bright gold/amber */
+  box-shadow: 0 0 calc(var(--active) * 3em) calc(var(--active) * 1em) hsl(47 100% 50% / 0.5),
+    0 0em 0 0 hsl(47 calc(var(--active) * 100%) calc((var(--active) * 30%) + 40%)) inset,
+    0 -0.05em 0 0 hsl(47 calc(var(--active) * 100%) calc(var(--active) * 40%)) inset;
+  
+  scale: calc(1 + (var(--active) * 0.1));
+  transition: box-shadow 0.3s, scale 0.3s, background 0.3s;
+}
+
 
 /* Hover effect for fill button */
 .wp-block-button .wp-block-button__link:hover {
-  background-color: var(--wp--preset--color--secondary);
-  /* transform: translateY(-2px); */
-  color: var(--wp--preset--color--background) !important;
+  /* background-color: var(--wp--preset--color--secondary);
+  transform: translateY(-2px); */
+  color: var(--wp--preset--color--secondary) !important;
+  --active: 1;
 }
 
 /* === Z-Index Utilities === */
@@ -48,6 +99,7 @@
   z-index: 100 !important;
   position: relative !important;
 }
+
 .z-front {
   z-index: 9999 !important;
   position: relative !important;
@@ -69,11 +121,18 @@
 }
 
 @media (max-width: 768px) {
+
   .nav-left,
   .nav-right {
     display: none;
   }
+
   .nav-mobile {
     display: block;
   }
+}
+
+/* Whatsapp */
+#simple-chat-button--button{
+background-color:  var(--wp--preset--color--primary)!important;
 }
