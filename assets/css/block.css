@@ -136,3 +136,23 @@
 #simple-chat-button--button{
 background-color:  var(--wp--preset--color--primary)!important;
 }
+
+
+
+/* portfolio */
+.portfolio-preview {
+  height: 400px;
+  overflow: hidden;
+  /* to get only containt width */
+  display: inline-block;  
+}
+
+.portfolio-preview img {
+  width: 100%;
+  transform: translateY(0);
+  transition: transform 5s linear;
+}
+
+.portfolio-preview:hover img {
+  transform: translateY(calc(-100% + 400px));
+}

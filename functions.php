@@ -22,6 +22,8 @@ if (! function_exists('tahanina_enqueue_styles')) :
     {
         wp_enqueue_style('tahanina-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
         wp_enqueue_style('block-style', get_template_directory_uri() . '/assets/css/block.css', array(), wp_get_theme()->get('Version'));
+        wp_enqueue_style('utilities-style', get_template_directory_uri() . '/assets/css/utilities.css', array(), wp_get_theme()->get('Version'));
+
     }
 endif;
 add_action('wp_enqueue_scripts', 'tahanina_enqueue_styles');
