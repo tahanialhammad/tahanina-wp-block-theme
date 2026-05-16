@@ -249,7 +249,7 @@
 			},
 			"h2": {
 				"typography": {
-					"fontSize": "clamp(0.8rem, -0.7rem + 4.8vw, 2rem)"
+					"fontSize": "clamp(1.5rem, -0.7rem + 4.8vw, 2rem)"
 				},
 				"color": {
 					"text": "var(--wp--preset--color--secondary)"

@@ -1,10 +1,11 @@
+/* Navigation */
 .wp-block-navigation a:hover {
-  /* color: var(--wp--preset--color--complementary) !important; */
+  color: var(--wp--preset--color--complementary) !important;
   border-bottom: 2px solid var(--wp--preset--color--complementary);
 }
 
 .wp-block-navigation-item.current-menu-item>a {
-  /* color: var(--wp--preset--color--complementary) !important; */
+  color: var(--wp--preset--color--primary) !important;
   font-weight: bold !important;
   border-bottom: 2px solid var(--wp--preset--color--complementary);
 }
@@ -25,6 +26,8 @@
   }
 }
 
+/* End Navigation */
+
 /* Outline button default */
 
 .wp-block-button__link {
@@ -33,7 +36,7 @@
   text-align: center;
 }
 
- .wp-block-button .wp-block-button__link {
+.wp-block-button .wp-block-button__link {
   background-color: var(--wp--preset--color--primary);
   color: var(--wp--preset--color--foreground);
   border: 2px solid var(--wp--preset--color--primary);
@@ -51,7 +54,7 @@
   background-color: var(--wp--preset--color--primary);
   color: var(--wp--preset--color--foreground);
   transform: translateY(-2px);
-  box-shadow: 
+  box-shadow:
     0 0 5px var(--wp--preset--color--primary),
     0 0 10px var(--wp--preset--color--primary),
     0 0 20px var(--wp--preset--color--primary);
@@ -61,16 +64,17 @@
   background-color: var(--wp--preset--color--secondary);
   color: var(--wp--preset--color--background);
   transform: translateY(-2px);
-  box-shadow: 
+  box-shadow:
     0 0 5px var(--wp--preset--color--secondary),
     0 0 10px var(--wp--preset--color--secondary),
     0 0 20px var(--wp--preset--color--secondary);
 }
+
 /* End Button */
 
 /* Whatsapp */
-#simple-chat-button--button{
-background-color:  var(--wp--preset--color--primary)!important;
+#simple-chat-button--button {
+  background-color: var(--wp--preset--color--primary) !important;
 }
 
 
@@ -80,7 +84,7 @@ background-color:  var(--wp--preset--color--primary)!important;
   height: 400px;
   overflow: hidden;
   /* to get only containt width */
-  display: inline-block;  
+  display: inline-block;
 }
 
 .portfolio-preview img {
@@ -92,4 +96,5 @@ background-color:  var(--wp--preset--color--primary)!important;
 .portfolio-preview:hover img {
   transform: translateY(calc(-100% + 400px));
 }
+
 /* End portfolio */
