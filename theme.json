@@ -47,7 +47,7 @@
 			"link": true,
 			"defaultPalette": false,
 			"palette": [
-				{
+						{
 					"name": "Primary",
 					"slug": "primary",
 					"color": "#ffc900"
@@ -55,12 +55,17 @@
 				{
 					"name": "Secondary",
 					"slug": "secondary",
-					"color": "#2c3066"
+					"color": "#5d2bbf"
+				},
+				{
+					"name": "Complementary",
+					"slug": "complementary",
+					"color": "#a689fa"
 				},
 				{
 					"name": "Foreground",
 					"slug": "foreground",
-					"color": "#333333"
+					"color": "#2b124f"
 				},
 				{
 					"name": "Background",
@@ -71,16 +76,6 @@
 					"name": "Background2",
 					"slug": "background2",
 					"color": "#fff"
-				},
-				{
-					"name": "Tertiary",
-					"slug": "tertiary",
-					"color": "#ffd800"
-				},
-				{
-					"name": "Complementary",
-					"slug": "complementary",
-					"color": "#E67E22"
 				}
 			],
 			"gradients": [
@@ -257,7 +252,7 @@
 					"fontSize": "clamp(0.8rem, -0.7rem + 4.8vw, 2rem)"
 				},
 				"color": {
-					"text": "var(--wp--preset--color--primary)"
+					"text": "var(--wp--preset--color--secondary)"
 				}
 			},
 			"button": {
