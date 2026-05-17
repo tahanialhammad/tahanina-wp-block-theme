@@ -68,3 +68,30 @@ body.home .site-header {
     padding-right: 1.5rem;
   }
 }
+
+
+/* Css animation  */
+/* أضيفي هذا الكلاس في خانة الـ CSS المخصص للزر */
+.modern-hover-btn {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.modern-hover-btn:hover {
+    transform: translateY(-4px); /* يرفع الزر قليلاً للأعلى */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* يضيف ظلاً ناعماً يعطي إيحاء بالعمق */
+}
+
+/* عند وضع الماوس على كارت منتج أو صورة مقال، تتكبر الصورة بداخل إطارها دون أن تخرج عنه: */
+/* الكلاس الذي يوضع على الحاوية أو العمود (Column) */
+.image-container-zoom {
+    overflow: hidden; /* لمنع الصورة من الخروج عن الحدود عند التكبير */
+}
+
+/* الكلاس الذي يوضع على الصورة نفسها */
+.zoom-img {
+    transition: transform 0.5s ease;
+}
+
+.image-container-zoom:hover .zoom-img {
+    transform: scale(1.08); /* تكبير الصورة بنسبة 8% فقط بشكل ناعم */
+}

@@ -190,3 +190,161 @@ function theme_allow_svg_uploads($mimes)
     return $mimes;
 }
 add_filter('upload_mimes', 'theme_allow_svg_uploads');
+
+
+
+
+
+
+// AOS animation 
+// function enqueue_aos_animation_assets() {
+//     // 1. ربط ملفات المكتبة
+//     wp_enqueue_style( 'aos-css', 'https://unpkg.com/aos@next/dist/aos.css', array(), '2.3.4' );
+//     wp_enqueue_script( 'aos-js', 'https://unpkg.com/aos@next/dist/aos.js', array(), '2.3.4', true );
+
+//     // 2. كود ذكي يحول كلاسات الووردبريس إلى خصائص تفهمها AOS ثم يشغل المكتبة
+//     $custom_aos_script = "
+//         document.addEventListener('DOMContentLoaded', function() {
+//             // ابحث عن أي عنصر يحتوي على كلاس يبدأ بـ aos-
+//             var animatedElements = document.querySelectorAll('[class*=\"aos-\"]');
+            
+//             animatedElements.forEach(function(element) {
+//                 // استخرج اسم الحركة من الكلاس (مثلاً: aos-fade-up تصبح fade-up)
+//                 element.classList.forEach(function(className) {
+//                     if (className.startsWith('aos-')) {
+//                         var animationName = className.replace('aos-', '');
+//                         element.setAttribute('data-aos', animationName);
+//                     }
+//                 });
+//             });
+
+//             // تشغيل المكتبة بعد تحويل الكلاسات
+//             AOS.init({
+//                 offset: 120,
+//                 duration: 800,
+//                 easing: 'ease-in-out',
+//                 once: true
+//             });
+//         });
+//     ";
+
+//     wp_add_inline_script( 'aos-js', $custom_aos_script );
+// }
+// add_action( 'wp_enqueue_scripts', 'enqueue_aos_animation_assets' );
+
+// //for delay
+// function enqueue_aos_animation_assets() {
+//     // 1. ربط ملفات المكتبة (CSS و JS)
+//     wp_enqueue_style( 'aos-css', 'https://unpkg.com/aos@next/dist/aos.css', array(), '2.3.4' );
+//     wp_enqueue_script( 'aos-js', 'https://unpkg.com/aos@next/dist/aos.js', array(), '2.3.4', true );
+
+//     // 2. الكود المطور لتحويل كلاسات الحركة وكلاسات التأخير (Delay)
+//     $custom_aos_script = "
+//         document.addEventListener('DOMContentLoaded', function() {
+//             // البحث عن العناصر التي تحتوي على كلاسات AOS
+//             var animatedElements = document.querySelectorAll('[class*=\"aos-\"]');
+            
+//             animatedElements.forEach(function(element) {
+//                 element.classList.forEach(function(className) {
+                    
+//                     // تحويل كلاس الحركة (مثال: aos-fade-up -> data-aos='fade-up')
+//                     if (className.startsWith('aos-') && !className.startsWith('aos-delay-')) {
+//                         var animationName = className.replace('aos-', '');
+//                         element.setAttribute('data-aos', animationName);
+//                     }
+                    
+//                     // تحويل كلاس التأخير (مثال: aos-delay-200 -> data-aos-delay='200')
+//                     if (className.startsWith('aos-delay-')) {
+//                         var delayValue = className.replace('aos-delay-', '');
+//                         element.setAttribute('data-aos-delay', delayValue);
+//                     }
+//                 });
+//             });
+
+//             // تشغيل المكتبة بالإعدادات الافتراضية
+//             AOS.init({
+//                 offset: 120,
+//                 duration: 800,
+//                 easing: 'ease-in-out',
+//                 once: true
+//             });
+//         });
+//     ";
+
+//     wp_add_inline_script( 'aos-js', $custom_aos_script );
+// }
+// add_action( 'wp_enqueue_scripts', 'enqueue_aos_animation_assets' );
+
+//defin it in custom.js
+function enqueue_aos_animation_assets() {
+    // 1. ربط ملف الـ CSS والـ JS الخاص بالمكتبة الأصلية من الـ CDN
+    wp_enqueue_style( 'aos-css', 'https://unpkg.com/aos@next/dist/aos.css', array(), '2.3.4' );
+    wp_enqueue_script( 'aos-js', 'https://unpkg.com/aos@next/dist/aos.js', array(), '2.3.4', true );
+
+    // 2. ربط ملفكِ المخصص الجديد الذي أنشأتِه لترجمة الكلاسات وتفعيل الحركة
+    // مع إخبار ووردبريس ألا يشغل هذا الملف إلا بعد تحميل مكتبة aos-js أولاً لضمان عدم حدوث أخطاء
+    wp_enqueue_script( 
+        'aos-custom-init', 
+        get_template_directory_uri() . '/assets/js/aos-custom.js', 
+        array('aos-js'), // يعتمد على الملف الأصلي
+        '1.0.0', 
+        true // تحميل في أسفل الصفحة لزيادة السرعة
+    );
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_aos_animation_assets' );
+
+
+
+
+
+
+
+
+
+// Calendly
+
+function calendly_popup_button(){
+
+ob_start();
+?>
+
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+<button id="calendly-book-btn" style="
+background:#0069ff;
+color:#fff;
+padding:12px 24px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-size:16px;">
+Book a meeting
+</button>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+var btn = document.getElementById("calendly-book-btn");
+
+if(btn){
+btn.addEventListener("click", function(e){
+e.preventDefault();
+
+Calendly.initPopupWidget({
+url: "https://calendly.com/tahaninawebdeveloper/website-consultatie"
+});
+
+});
+}
+
+});
+</script>
+
+<?php
+
+return ob_get_clean();
+
+}
+
+add_shortcode('calendly_popup','calendly_popup_button');
