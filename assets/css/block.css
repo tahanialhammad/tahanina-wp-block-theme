@@ -1,13 +1,14 @@
 /* Navigation */
 .wp-block-navigation a:hover {
-  color: var(--wp--preset--color--complementary) !important;
-  border-bottom: 2px solid var(--wp--preset--color--complementary);
+  color: var(--wp--preset--color--primary) !important;
+  font-weight: bold !important;
+  border-bottom: 2px solid var(--wp--preset--color--primary);
 }
 
 .wp-block-navigation-item.current-menu-item>a {
   color: var(--wp--preset--color--primary) !important;
   font-weight: bold !important;
-  border-bottom: 2px solid var(--wp--preset--color--complementary);
+  border-bottom: 2px solid var(--wp--preset--color--primary);
 }
 
 .nav-mobile {
